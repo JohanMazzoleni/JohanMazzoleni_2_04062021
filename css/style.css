@@ -2,7 +2,6 @@
 body {
   margin: 28px;
   font-family: 'Raleway', sans-serif;
-  background-color: #F2F2F2;
 }
 
 .header {
@@ -34,6 +33,9 @@ body {
     display: none;
   }
   .navigation-mobile {
+    display: none;
+  }
+  .button-mobile {
     display: none;
   }
 }
@@ -80,6 +82,106 @@ body {
   .navigation-mobile a {
     text-decoration: none;
     color: #0065FC;
+  }
+}
+
+.search {
+  margin-top: 54px;
+}
+
+.search .big-text {
+  font-size: 22px;
+}
+
+.search .bold {
+  font-weight: bold;
+}
+
+.search .mt-10 {
+  margin-top: 10px;
+}
+
+.search .box {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search .box .icone {
+  background: #F2F2F2;
+  border-radius: 15px 0 0 15px;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search .box .input input {
+  padding: 15px;
+  border: #F2F2F2 2px solid;
+  outline: none;
+  border-left: none;
+  border-right: none;
+}
+
+.search .box .input input::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.search .box .input input:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.search .box .input input::-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.search .box .input input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.search .box .button {
+  border-radius: 0 15px 15px 0;
+  padding: 15px;
+  background-color: #0065FC;
+}
+
+.search .box .button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .search {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 32px;
+  }
+  .search .box .icone {
+    padding: 20px;
+  }
+  .search .box .input input {
+    padding: 20px;
+    width: 300px;
+  }
+  .search .box .button {
+    display: none;
+  }
+  .search .box .button-mobile {
+    position: relative;
+    left: -12px;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #0065FC;
   }
 }
 /*# sourceMappingURL=style.css.map */
