@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@549&display=swap");
 body {
   margin: 28px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
@@ -24,8 +24,8 @@ body {
 }
 
 .header .navigation .active {
-  color: #0065FC;
-  border-top: #0065FC 2px solid;
+  color: #0065fc;
+  border-top: #0065fc 2px solid;
 }
 
 @media (min-width: 1024px) {
@@ -36,6 +36,9 @@ body {
     display: none;
   }
   .button-mobile {
+    display: none;
+  }
+  .title-mobile {
     display: none;
   }
 }
@@ -61,7 +64,7 @@ body {
   }
   .header-mobile .right a {
     text-decoration: none;
-    color: #0065FC;
+    color: #0065fc;
     padding: 40px;
     font-weight: bold;
   }
@@ -77,11 +80,11 @@ body {
     border-bottom: #d6d6d6 4px solid;
   }
   .navigation-mobile .active {
-    border-bottom: #0065FC 4px solid;
+    border-bottom: #0065fc 4px solid;
   }
   .navigation-mobile a {
     text-decoration: none;
-    color: #0065FC;
+    color: #0065fc;
   }
 }
 
@@ -109,7 +112,7 @@ body {
 }
 
 .search .box .icone {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 15px 0 0 15px;
   padding: 15px;
   -webkit-box-align: center;
@@ -122,7 +125,7 @@ body {
 
 .search .box .input input {
   padding: 15px;
-  border: #F2F2F2 2px solid;
+  border: #f2f2f2 2px solid;
   outline: none;
   border-left: none;
   border-right: none;
@@ -151,7 +154,7 @@ body {
 .search .box .button {
   border-radius: 0 15px 15px 0;
   padding: 15px;
-  background-color: #0065FC;
+  background-color: #0065fc;
 }
 
 .search .box .button a {
@@ -181,7 +184,69 @@ body {
     color: white;
     border-radius: 15px;
     padding: 20px;
-    background-color: #0065FC;
+    background-color: #0065fc;
+  }
+}
+
+.filter {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.filter .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filter .list .tag {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.filter .list .tag .icone {
+  background: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0065fc;
+  position: absolute;
+}
+
+.filter .list .tag .name {
+  border-radius: 30px;
+  padding: 15px;
+  border: 3px #f2f2f2 solid;
+  padding-left: 60px;
+}
+
+@media (max-width: 1024px) {
+  .filter .title-mobile {
+    margin-left: 20px;
+  }
+  .filter .title {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
