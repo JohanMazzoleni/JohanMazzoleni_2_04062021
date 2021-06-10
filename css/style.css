@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@549&display=swap");
 body {
   margin: 28px;
+  margin-left: 140px;
+  margin-right: 140px;
   font-family: "Raleway", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .header {
@@ -32,7 +38,7 @@ body {
   border-top: #0065fc 2px solid;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1891px) {
   .header-mobile {
     display: none;
   }
@@ -47,7 +53,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1891px) {
   .header {
     display: none;
   }
@@ -98,10 +104,6 @@ body {
 
 .search .big-text {
   font-size: 22px;
-}
-
-.search .bold {
-  font-weight: bold;
 }
 
 .search .mt-10 {
@@ -166,7 +168,7 @@ body {
   color: white;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1891px) {
   .search {
     margin-left: 40px;
     margin-right: 40px;
@@ -249,12 +251,210 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1891px) {
   .filter .title-mobile {
     margin-left: 20px;
   }
   .filter .title {
     display: none;
+  }
+}
+
+.hosting {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 63% auto;
+      grid-template-columns: 63% auto;
+  grid-gap: 40px;
+}
+
+.hosting .left {
+  background: #f2f2f2;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.hosting .left .title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.hosting .left .more {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.hosting .left .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hosting .left .list .card {
+  margin-top: 20px;
+  width: 290px;
+  background: white;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hosting .left .list .card .bold {
+  font-weight: bold;
+}
+
+.hosting .left .list .card .logo {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.hosting .left .list .card .logo img {
+  border-radius: 8px 8px 0 0;
+  width: 96%;
+  height: 113px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hosting .left .list .card .bottom {
+  padding: 5px 10px 10px 10px;
+}
+
+.hosting .left .list .card .bottom .card-title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.hosting .left .list .card .bottom .price {
+  margin-top: 5px;
+}
+
+.hosting .left .list .card .bottom .stars {
+  margin-top: 10px;
+  color: #0065fc;
+}
+
+.hosting .left .list .card .bottom .grey {
+  color: #f2f2f2;
+}
+
+.hosting .left .list .card:not(:nth-child(1)):not(:nth-child(4)) {
+  margin-left: 30px;
+}
+
+.hosting .right {
+  background: #f2f2f2;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.hosting .right .title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hosting .right .title-box .title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.hosting .right .title-box .icone {
+  font-size: 30px;
+}
+
+.hosting .right .list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hosting .right .list .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  padding: 6px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hosting .right .list .card .top .image img {
+  border-radius: 15px 0px 0 15px;
+  width: 140px;
+  height: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hosting .right .list .card .bottom {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.hosting .right .list .card .bottom .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hosting .right .list .card .bottom .price {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.hosting .right .list .card .bottom .stars {
+  position: absolute;
+  bottom: 15px;
+  margin-top: 10px;
+  color: #0065fc;
+}
+
+.hosting .right .list .card .bottom .grey {
+  color: #f2f2f2;
+}
+
+@media (max-width: 1891px) {
+  .hosting {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 0px;
+  }
+  .hosting .left {
+    background: white;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-radius: 0px;
+  }
+  .hosting .left .list .card {
+    width: 100%;
+  }
+  .hosting .left .list .card:not(:nth-child(1)):not(:nth-child(4)) {
+    margin-left: 0px;
+  }
+  .hosting .right {
+    border-radius: 0px;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
