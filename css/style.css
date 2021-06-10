@@ -431,6 +431,15 @@ body {
   color: #f2f2f2;
 }
 
+@media (max-width: 375px) {
+  .hosting .right .list .card .bottom .title {
+    font-size: 15px;
+  }
+  .hosting .right .list .card .bottom .stars {
+    position: inherit;
+  }
+}
+
 @media (max-width: 1891px) {
   .hosting {
     -ms-grid-columns: 100%;
