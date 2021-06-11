@@ -260,6 +260,44 @@ body {
   }
 }
 
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .icone {
+  color: #0065fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: #f2f2f2 solid 1px;
+}
+
+.info .texte {
+  margin-left: 10px;
+}
+
+@media (max-width: 1891px) {
+  .info {
+    margin-left: 20px;
+  }
+}
+
 .hosting {
   margin-top: 20px;
   display: -ms-grid;
