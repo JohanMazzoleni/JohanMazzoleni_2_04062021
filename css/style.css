@@ -532,6 +532,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    padding: 40px;
   }
   .activity .list .box .card {
     width: 100%;
