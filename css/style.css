@@ -316,6 +316,7 @@ body {
 .hosting .left .title {
   font-weight: bold;
   font-size: 22px;
+  margin: 0;
 }
 
 .hosting .left .more {
@@ -412,6 +413,7 @@ body {
 .hosting .right .title-box .title {
   font-weight: bold;
   font-size: 22px;
+  margin: 0;
 }
 
 .hosting .right .title-box .icone {
@@ -516,6 +518,7 @@ body {
 }
 
 .activity {
+  margin: 0;
   margin-top: 50px;
   padding: 10px;
 }
