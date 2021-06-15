@@ -38,7 +38,7 @@ body {
   border-top: #0065fc 2px solid;
 }
 
-@media (min-width: 1891px) {
+@media (min-width: 1600px) {
   .header-mobile {
     display: none;
   }
@@ -53,7 +53,7 @@ body {
   }
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .header {
     display: none;
   }
@@ -168,7 +168,7 @@ body {
   color: white;
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .search {
     margin-left: 40px;
     margin-right: 40px;
@@ -251,7 +251,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .filter .title-mobile {
     margin-left: 20px;
   }
@@ -292,7 +292,7 @@ body {
   margin-left: 10px;
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .info {
     margin-left: 20px;
   }
@@ -330,13 +330,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
 }
 
 .hosting .left .list .card {
   margin-top: 20px;
-  width: 290px;
+  width: 237px;
   background: white;
   border-radius: 15px 15px 15px 15px;
   font-size: 15px;
@@ -386,10 +387,6 @@ body {
 
 .hosting .left .list .card .bottom .grey {
   color: #f2f2f2;
-}
-
-.hosting .left .list .card:not(:nth-child(1)):not(:nth-child(4)) {
-  margin-left: 30px;
 }
 
 .hosting .right {
@@ -490,7 +487,7 @@ body {
   }
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .hosting {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -503,11 +500,14 @@ body {
             order: 1;
     border-radius: 0px;
   }
+  .hosting .left .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .hosting .left .list .card {
     width: 100%;
-  }
-  .hosting .left .list .card:not(:nth-child(1)):not(:nth-child(4)) {
-    margin-left: 0px;
   }
   .hosting .right {
     border-radius: 0px;
@@ -532,8 +532,8 @@ body {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .activity .list .box {
@@ -582,7 +582,7 @@ body {
   padding: 15px;
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .activity {
     padding: 0px;
   }
@@ -630,7 +630,7 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 1891px) {
+@media (max-width: 1600px) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
