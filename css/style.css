@@ -374,6 +374,7 @@ body {
 .hosting .left .list .card .bottom .card-title {
   font-weight: bold;
   font-size: 17px;
+  margin: 0;
 }
 
 .hosting .left .list .card .bottom .price {
@@ -460,6 +461,7 @@ body {
 .hosting .right .list .card .bottom .title {
   font-weight: bold;
   font-size: 18px;
+  margin: 0;
 }
 
 .hosting .right .list .card .bottom .price {
@@ -532,7 +534,8 @@ body {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
 }
 
 .activity .list .box {
@@ -579,6 +582,7 @@ body {
 .activity .list .box .card .title {
   font-size: 17px;
   padding: 15px;
+  margin: 0;
 }
 
 @media (max-width: 1600px) {
@@ -624,6 +628,10 @@ body {
   padding: 20px;
 }
 
+.footer .box h1 {
+  font-size: 1.30em;
+}
+
 .footer .box a {
   color: #1d1d1d;
   text-decoration: none;
@@ -640,3 +648,4 @@ body {
     margin-left: 0px;
   }
 }
+/*# sourceMappingURL=style.css.map */
