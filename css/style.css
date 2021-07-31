@@ -177,6 +177,10 @@ body {
   color: white;
 }
 
+.search .box .button i {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .search {
     margin-left: 8px;
@@ -188,10 +192,10 @@ body {
   .search .box .input input {
     padding: 20px;
   }
-  .search .box .button {
+  .search .box a {
     display: none;
   }
-  .search .box .button-mobile {
+  .search .box .button {
     position: relative;
     left: -12px;
     color: white;
@@ -199,20 +203,8 @@ body {
     padding: 20px;
     background-color: #0065fc;
   }
-  .search .button {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  .search .button-mobile {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .search .button-mobile {
-    display: none;
+  .search .box .button i {
+    display: block;
   }
 }
 
