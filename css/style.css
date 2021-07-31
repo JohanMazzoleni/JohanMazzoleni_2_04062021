@@ -711,7 +711,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   .activity {
+    margin-top: 10px;
     padding: 40px;
+    padding-top: 0px;
   }
   .activity .list {
     -webkit-box-orient: vertical;
