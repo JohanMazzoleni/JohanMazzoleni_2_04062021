@@ -20,6 +20,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 993px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
 .bold {
   font-weight: bold;
 }
@@ -581,6 +588,9 @@ body {
   .hosting .right .list .card .bottom .price {
     font-size: 11px;
   }
+  .hosting .right .list .card .bottom .stars {
+    position: initial;
+  }
 }
 
 @media only screen and (min-width: 993px) {
@@ -622,6 +632,7 @@ body {
     font-size: 12px;
   }
   .hosting .right .list .card .bottom .stars {
+    position: initial;
     bottom: 10px;
     font-size: 13px;
   }
@@ -638,14 +649,27 @@ body {
         -ms-flex-order: 1;
             order: 1;
   }
+  .hosting .right .list .card .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .hosting .right .list .card .bottom .title {
-    font-size: 15px;
+    font-size: 18px;
   }
   .hosting .right .list .card .bottom .price {
     margin-top: 10px;
     font-size: 15px;
   }
   .hosting .right .list .card .bottom .stars {
+    position: relative;
     bottom: 15px;
     font-size: 16px;
   }
