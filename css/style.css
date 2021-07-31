@@ -189,7 +189,11 @@ body {
   .search .box .icone {
     padding: 20px;
   }
+  .search .box .input {
+    width: 100%;
+  }
   .search .box .input input {
+    width: 100%;
     padding: 20px;
   }
   .search .box a {
