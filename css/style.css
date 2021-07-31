@@ -773,6 +773,12 @@ body {
   .activity .list .box .card .image .big {
     height: 387px;
   }
+  .activity .list .big-card {
+    width: 30%;
+  }
+  .activity .list .tiny-card {
+    width: 22%;
+  }
 }
 
 .footer {
